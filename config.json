@@ -4,9 +4,9 @@
 		"problem": "Unionable",
 		"split": [
 			{
-				"columns": ["DistributionBased", "JaccardLevenMatcher"],
+				"columns": ["DistributionBased", "JaccardLevenMatcher", "EmbDI"],
 				"type": "TypeOfValues",
-				"drop_alg": ["COMA-S", "Cupid", "SimilarityFlooding", "SemProp", "COMA-SI", "EmbDI"],
+				"drop_alg": ["COMA-S", "Cupid", "SimilarityFlooding", "SemProp", "COMA-SI"],
 				"drop": ["Category", "SplitMethod", "HorizontalOverlap", "VerticalOverlap",
 					"ColumnNames", "Dataset", "TypeOfValues"]
 			}, 
@@ -31,9 +31,9 @@
 		"problem": "View-Unionable",
 		"split": [
 			{
-				"columns": ["DistributionBased", "JaccardLevenMatcher"],
+				"columns": ["DistributionBased", "JaccardLevenMatcher", "EmbDI"],
 				"type": "TypeOfValues",
-				"drop_alg": ["COMA-S", "Cupid", "SimilarityFlooding", "SemProp", "COMA-SI", "EmbDI"],
+				"drop_alg": ["COMA-S", "Cupid", "SimilarityFlooding", "SemProp", "COMA-SI"],
 				"drop": ["Category", "SplitMethod", "HorizontalOverlap", "VerticalOverlap",
 					"ColumnNames", "Dataset", "TypeOfValues"]
 			},
