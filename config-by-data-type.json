@@ -1,0 +1,80 @@
+{
+	"config": [
+	{
+		"problem": "Unionable",
+		"split": [
+			{
+				"columns": ["DistributionBased", "JaccardLevenMatcher", "COMA-SI", "EmbDI"],
+				"type": "TypeOfValues",
+				"drop_alg": ["COMA-S", "Cupid", "SimilarityFlooding", "SemProp"],
+				"drop": ["Category", "SplitMethod", "HorizontalOverlap", "VerticalOverlap",
+					"ColumnNames", "Dataset", "TypeOfValues"]
+			}, 
+			{
+				"columns": ["COMA-S", "Cupid", "SimilarityFlooding", "SemProp"],
+				"type": "ColumnNames",
+				"drop_alg": ["DistributionBased", "JaccardLevenMatcher", "COMA-SI", "EmbDI"],
+				"drop": ["Category", "SplitMethod", "HorizontalOverlap", "VerticalOverlap",
+					"ColumnNames", "Dataset", "TypeOfValues"]
+			}
+		]
+	}, 
+	{
+		"problem": "View-Unionable",
+		"split": [
+			{
+				"columns": ["DistributionBased", "JaccardLevenMatcher", "EmbDI", "COMA-SI"],
+				"type": "TypeOfValues",
+				"drop_alg": ["COMA-S", "Cupid", "SimilarityFlooding", "SemProp"],
+				"drop": ["Category", "SplitMethod", "HorizontalOverlap", "VerticalOverlap",
+					"ColumnNames", "Dataset", "TypeOfValues"]
+			},
+			{
+				"columns": ["COMA-S", "Cupid", "SimilarityFlooding", "SemProp"],
+				"type": "ColumnNames",
+				"drop_alg": ["DistributionBased", "JaccardLevenMatcher", "COMA-SI", "EmbDI"],
+				"drop": ["Category", "SplitMethod", "HorizontalOverlap", "VerticalOverlap",
+					"ColumnNames", "Dataset", "TypeOfValues"]
+			}
+		]
+	},
+	{
+		"problem": "Joinable",
+		"split": [
+			{
+				"columns": ["DistributionBased", "JaccardLevenMatcher", "COMA-SI", "EmbDI"],
+				"type": "TypeOfValues",
+				"drop_alg": ["COMA-S", "Cupid", "SimilarityFlooding", "SemProp"],
+				"drop": ["Category", "SplitMethod", "HorizontalOverlap", "VerticalOverlap",
+					"ColumnNames", "Dataset", "TypeOfValues"]
+			}, 
+			{
+				"columns": ["COMA-S", "Cupid", "SimilarityFlooding", "SemProp" ],
+				"type": "ColumnNames",
+				"drop_alg": ["DistributionBased", "JaccardLevenMatcher", "COMA-SI", "EmbDI"],
+				"drop": ["Category", "SplitMethod", "HorizontalOverlap", "VerticalOverlap",
+					"ColumnNames", "Dataset", "TypeOfValues"]
+			}
+		]
+	},
+	{
+		"problem": "Semantically-Joinable",
+		"split": [
+			{
+				"columns": ["DistributionBased", "JaccardLevenMatcher", "COMA-SI", "EmbDI"],
+				"type": "TypeOfValues",
+				"drop_alg": ["COMA-S", "Cupid", "SimilarityFlooding", "SemProp" ],
+				"drop": ["Category", "SplitMethod", "HorizontalOverlap", "VerticalOverlap",
+					"ColumnNames", "Dataset", "TypeOfValues"]
+			}, 
+			{
+				"columns": ["COMA-S", "Cupid", "SimilarityFlooding", "SemProp" ],
+				"type": "ColumnNames",
+				"drop_alg": ["DistributionBased", "JaccardLevenMatcher", "COMA-SI", "EmbDI"],
+				"drop": ["Category", "SplitMethod", "HorizontalOverlap", "VerticalOverlap",
+					"ColumnNames", "Dataset", "TypeOfValues"]
+			}
+		]
+	}
+	]
+}
